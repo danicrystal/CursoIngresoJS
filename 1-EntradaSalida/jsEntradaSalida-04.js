@@ -1,12 +1,19 @@
 /* 
 Camila Viñas Velazqez Div E
+E/S Ej 4
 Debemos lograr tomar un dato por 'PROMPT' 
 y lo muestro por 'ID' al presionar el botón 'mostrar'
 */
 function mostrar()
 {
-	txtIdNombre.value = prompt("Ingrese su nombre");
+	//declaro variable
+	var nombreIngresado;
 
-	alert(txtIdNombre.value);
+	//guardo el dato
+	nombreIngresado = prompt("Ingrese su nombre");
+	
+	txtIdNombre.value = nombreIngresado;
+
+	
 }
 
