@@ -1,4 +1,6 @@
 /*
+Camila Viñas Velazquez DIV E
+E/S EJ 9
 Debemos lograr tomar el importe por ID ,
 transformarlo a entero (parseInt), luego
 mostrar el importe con un aumento del 10 %
