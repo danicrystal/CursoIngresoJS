@@ -8,19 +8,21 @@ C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de c
 
 function Rectangulo () 
 {
-var ancho;
-var largo;
-var perimetro;
-var totalAlambre
+  var ancho;
+  var largo;
+  var perimetro;
+  var totalAlambre;
 
-ancho = parseInt(document.getElementById("txtIdAncho").value);
-largo = parseInt(document.getElementById("txtIdLargo").value);
+  ancho = document.getElementById("txtIdAncho").value;
+  largo = document.getElementById("txtIdLargo").value;
+  ancho = parseInt (ancho);
+  largo = parseInt (largo);
 
-perimetro = (ancho + largo) * 2;
+  perimetro = (ancho + largo) * 2;
 
-totalAlambre = perimetro * 3;
+  totalAlambre = perimetro * 3;
 
-alert ("Se necesitaran " + totalAlambre + " metros de alambre");
+  alert ("Se necesitaran " + totalAlambre + " metros de alambre");
 
 
 
@@ -28,33 +30,37 @@ alert ("Se necesitaran " + totalAlambre + " metros de alambre");
 function Circulo () 
 {
 	var perimetro;
-    var radio;
-    var totalAlambre;
-    const PI = 3.14;
+  var radio;
+  var totalAlambre;
+  const PI = 3.14;
 
-    radio = parseInt(document.getElementById("txtIdRadio").value);
+  radio = document.getElementById("txtIdRadio").value;
+  radio = parseInt(radio);
 
+  perimetro = 2 * PI * radio;
 
-    perimetro = 2 * PI * radio;
+  totalAlambre = perimetro * 3;
 
-    totalAlambre = perimetro * 3;
-
-    alert ("Se necesitaran " + totalAlambre + " metros de alambre");
+  alert ("Se necesitaran " + totalAlambre + " metros de alambre");
 }
 function Materiales () 
 {
-    var ancho;
-    var largo;
-    var area;
-    var cemento;
-    var cal;
+  var ancho;
+  var largo;
+  var area;
+  var cemento;
+  var cal;
 	
-    ancho = parseInt(document.getElementById("txtIdAncho").value);
-    largo = parseInt(document.getElementById("txtIdLargo").value);
+  ancho = (document.getElementById("txtIdAncho").value);
+  largo = (document.getElementById("txtIdLargo").value);
 
-    area = ancho * largo;
-    cemento = area * 2;
-    cal = area * 3;
+  ancho = parseInt (ancho);
+  largo = parseInt (largo);
 
-    alert ("Se necesitaran " + cemento + " bolsas de cemento y " + cal +" bolsas de cal");
+  area = ancho * largo;
+  cemento = area * 2;
+  cal = area * 3;
+
+  alert ("Se necesitaran " + cemento + " bolsas de cemento y " + cal +" bolsas de cal");
+
 }    

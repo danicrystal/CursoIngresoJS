@@ -1,4 +1,6 @@
-/*RISING BTL. Empresa dedicada a la toma de datos para realizar estadísticas y censos nos pide realizar una carga de datos validada e ingresada por ventanas emergentes solamente (para evitar hacking y cargas maliciosas) y luego asignarla a cuadros de textos. 
+/*RISING BTL. Empresa dedicada a la toma de datos para realizar estadísticas y censos 
+nos pide realizar una carga de datos validada e ingresada por ventanas emergentes 
+solamente (para evitar hacking y cargas maliciosas) y luego asignarla a cuadros de textos. 
 12.   Los datos requeridos son los siguientes:
 A.	Edad, entre 18 y 90 años inclusive.
 B.	Sexo, “M” para masculino y “F” para femenino
@@ -13,6 +15,36 @@ function ComenzarIngreso ()
  	var edadIngresada;
  	var sexoIngresado;
  	var estadoCivilIngresado;
+
+	edadIngresada = prompt("Ingrese su edad. Entre 18 y 90 inclusive."); //ingreso la edad
+	edadIngresada = parseInt(edadIngresada)
+	;
+	while (!(edadIngresada>17 || edadIngresada<=90))
+
+	{
+		edadIngresada = prompt ("Valor incorrecto. Reingrese un valor entre 18 y 90 inclusive.");
+		edadIngresada = parseInt(edadIngresada);
+	}
+		
+	sexoIngresado = prompt("ingrese f ó m .");//ingreso el sexo
+	sexoIngresado = sexoIngresado.toLowerCase();
+	while((sexoIngresado != "f" && sexoIngresado != "m"))
+	{
+		
+		sexoIngresado = prompt("reingrese f ó m");
+		sexoIngresado = sexoIngresado.toLowerCase();
+	}
+	//estado civil
+	estadoCivilIngresado = prompt("Ingrese su estado civil 1-soltero, 2-Casado, 3-Divorciado, 4-viudo");
+	estadoCivilIngresado  = parseInt(estadoCivilIngresado);
+	while(isNaN(estadoCivilIngresado) || estadoCivilIngresado!=1 && estadoCivilIngresado!=2 && estadoCivilIngresado!=3 && estadoCivilIngresado!=4)
+	{
+		
+	}
+			
+
+
+	
 
 
 

@@ -12,9 +12,13 @@ function Sumar ()
     var pre3;
     var sumaTotal;
 
-    pre1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
-    pre2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
-    pre3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
+    pre1 = document.getElementById("txtIdPrecioUno").value;
+    pre2 = document.getElementById("txtIdPrecioDos").value;
+    pre3 = document.getElementById("txtIdPrecioTres").value;
+
+    pre1 = parseInt(pre1);
+    pre2 = parseInt(pre2);
+    pre3 = parseInt(pre3);
 
     sumaTotal = pre1 + pre2 + pre3;
 
@@ -29,9 +33,14 @@ function Promedio ()
     var pre3;
     var sumaTotal;
 
-    pre1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
-    pre2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
-    pre3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
+    pre1 = document.getElementById("txtIdPrecioUno").value;
+    pre2 = document.getElementById("txtIdPrecioDos").value;
+    pre3 = document.getElementById("txtIdPrecioTres").value;
+
+    pre1 = parseInt(pre1);
+    pre2 = parseInt(pre2);
+    pre3 = parseInt(pre3);
+
 
     sumaTotal = pre1 + pre2 + pre3;
 
@@ -47,9 +56,14 @@ function PrecioFinal ()
     var masIva;
     var preFin;
 
-    pre1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
-    pre2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
-    pre3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
+    pre1 = document.getElementById("txtIdPrecioUno").value;
+    pre2 = document.getElementById("txtIdPrecioDos").value;
+    pre3 = document.getElementById("txtIdPrecioTres").value;
+
+    pre1 = parseInt(pre1);
+    pre2 = parseInt(pre2);
+    pre3 = parseInt(pre3);
+
 
     sumaTotal = pre1 + pre2 + pre3;
 
@@ -58,6 +72,7 @@ function PrecioFinal ()
     preFin = sumaTotal + masIva;
 
     alert("El precio final es $ " + preFin);
+    
 }
 
 

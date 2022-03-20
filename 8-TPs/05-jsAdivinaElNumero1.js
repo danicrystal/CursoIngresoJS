@@ -9,12 +9,12 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 */
 var numeroSecreto; 
 var contadorIntentos;
-
+var aleatorio = Math.random();
 function comenzar()
 {
-	//Genero el número RANDOM entre 1 y 100
-	 
-		//alert(numeroSecreto );
+	 //pongo la formula para generar un num random
+	numeroSecreto = Math.floor(aleatorio* (100 - 1 + 1) + 1);
+
 	
 
 }
